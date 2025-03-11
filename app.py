@@ -20,7 +20,7 @@ for linha in pagina_clientes.iter_rows(min_row=2):
         print(f"Contato inválido na planilha: {nome}, {telefone}")
         continue  
 
-    mensagem = f'Olá, {nome}! Sou o Assistente virtual de João Pedro Bento. Vim avisar que seu pagamento vence no dia {vencimento.strftime("%d/%m/%Y")}. Fique atento para não ultrapassar a data de vencimento!'
+    mensagem = f'Olá, {nome}! Tudo bem? Sou o Assistente virtual de João Pedro Bento de Andrade. Vim por meio dessa mensagem te avisar que seu pagamento vence no dia {vencimento.strftime("%d/%m/%Y")}. Fique atento para não ultrapassar a data de vencimento!. Qualquer dúvida estou à disposição. Atenciosamente, João Pedro Bento de Andrade. Obrigado pela a atenção!'
 
     try:
         link_mensagem_whatsapp = f'https://web.whatsapp.com/send?phone={telefone}&text={quote(mensagem)}'
